@@ -153,6 +153,7 @@ h1 {
     font-size: 20px;
     padding: 20px 48px;
     text-decoration: none;
+    display: inline-block;
 }
 
 .dots {
