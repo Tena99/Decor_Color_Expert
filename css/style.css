@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'GothicA1-Regular';
+    src: url('../fonts/GothicA1-Regular.eot');
+    src: url('../fonts/GothicA1-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GothicA1-Regular.woff2') format('woff2'),
+        url('../fonts/GothicA1-Regular.woff') format('woff'),
+        url('../fonts/GothicA1-Regular.ttf') format('truetype'),
+        url('../fonts/GothicA1-Regular.svg#GothicA1-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 
 @font-face {
     font-family: 'GothicA1-SemiBolt';
@@ -72,6 +86,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1200px;
+    margin: auto;
 }
 
 header ul{
@@ -140,7 +156,9 @@ h1 {
 }
 
 .dots {
-margin-bottom: 160px;
+    display: block;
+    width: 100%;
+    margin-bottom: 160px;
 }
 
 .about_us {
@@ -161,12 +179,49 @@ margin-bottom: 160px;
     font-family: 'Roboto-Light';
 }
 
-.term {
+strong {
     font-family: 'Manrope-SemiBold';
     font-weight: 600;
 }
 
-.about_us .container {
-    max-width: 1200px;
-    margin: auto;
+.form_section {
+    padding-bottom: 200px;
+}
+
+.form_section .dots {
+    margin-bottom: 200px;
+}
+
+.form_section h3 {
+    font-family: 'GothicA1-Regular';
+    font-size: 24px;
+    line-height: 130%;
+    margin-bottom: 30px;
+}
+
+form input {
+    display: block;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Roboto-Light';
+    margin-bottom: 40px;
+    height: 24px;
+    padding-bottom: 5px;
+
+}
+
+textarea {
+    resize: none;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Roboto-Light';
+    height: 24px;
+    padding-bottom: 5px;
+    margin-bottom: 60px
 }
