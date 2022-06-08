@@ -79,7 +79,11 @@
 }
 
 .logo {
-    height: 132px;
+    height: 55px;
+}
+
+header .container {
+    margin: 0;
 }
 
 .container {
@@ -90,9 +94,23 @@
     margin: auto;
 }
 
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    position: absolute;
+    z-index: 2;
+    top: 30px;
+    width: 100%;
+}
+
 header ul{
     display: flex;
     list-style: none;
+    position: relative;
+    top: -5x;;
 }
 
 header ul li a {
@@ -112,13 +130,10 @@ header ul li a {
 }
 
 .decor_section {
-    padding-top: 88px;
+    padding-top: 170px;
     padding-bottom: 34px;
-}
-
-.wrapper {
-    max-width: 1200px;
-    margin: auto;
+    position: relative;
+    z-index: 1;
 }
 
 h1 {
@@ -154,6 +169,13 @@ h1 {
     padding: 20px 48px;
     text-decoration: none;
     display: inline-block;
+    font-family:'Roboto-Light';
+    font-weight: 300;
+}
+
+.decor_section .order {
+    font-family: 'Roboto-Medium';
+    font-weight: 500;
 }
 
 .dots {
@@ -183,6 +205,36 @@ h1 {
 strong {
     font-family: 'Manrope-SemiBold';
     font-weight: 600;
+}
+
+.texture_section {
+    padding-bottom: 150px;
+}
+
+.texture_section .dots {
+    margin-bottom: 152px;
+}
+
+.texture_section h3 {
+    margin-left: 95px;
+    margin-bottom: 12px;
+    font-family: 'GothicA1-Regular';
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.texture_section p {
+    font-family: 'Roboto-Medium';
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.texture_section .container {
+    margin-bottom: 40px;
+}
+
+.texture_section .order {
+margin: auto;
 }
 
 .form_section {
@@ -225,4 +277,8 @@ textarea {
     height: 24px;
     padding-bottom: 5px;
     margin-bottom: 60px
+}
+
+button {
+    border: none;
 }
