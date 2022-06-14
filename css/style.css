@@ -214,6 +214,17 @@ strong {
     padding-bottom: 150px;
 }
 
+.texture_section img {
+    display: block;
+    width: 100%;
+}
+
+.texture_image {
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
 .texture_section .dots {
     margin-bottom: 152px;
 }
@@ -224,20 +235,20 @@ strong {
     font-family: 'GothicA1-Regular';
     font-weight: 400;
     font-size: 24px;
+    margin-bottom: 52px;
 }
 
 .texture_section p {
     font-family: 'Roboto-Medium';
     font-size: 16px;
-    margin-top: 20px;
 }
 
-.texture_section .container {
+.texture_section article {
     margin-bottom: 40px;
 }
 
 .texture_section .order {
-margin: auto;
+    margin: auto;
 }
 
 .video_feedback_section {
@@ -250,6 +261,7 @@ margin: auto;
     color: white;
     font-size: 24px;
     font-family: 'GothicA1-Regular';
+    font-weight: 400;
     margin-left: 95px;
     margin-bottom: 87px;
 }
@@ -261,7 +273,6 @@ margin: auto;
     font-weight: 500;
     line-height: 150%;
     margin-bottom: 10px;
-    margin-top: 20px;
 }
 
 .video_feedback_section p {
@@ -282,6 +293,7 @@ border-radius: 25px;
 overflow: hidden;
 max-width: 255px;
 position: relative;
+margin-bottom: 20px;
 }
 
 .arrow {
