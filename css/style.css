@@ -1,4 +1,17 @@
 @font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-SemiBold.eot');
+    src: url('../fonts/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Montserrat-SemiBold.woff2') format('woff2'),
+        url('../fonts/Montserrat-SemiBold.woff') format('woff'),
+        url('../fonts/Montserrat-SemiBold.ttf') format('truetype'),
+        url('../fonts/Montserrat-SemiBold.svg#Montserrat-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
     font-family: 'GothicA1-Regular';
     src: url('../fonts/GothicA1-Regular.eot');
     src: url('../fonts/GothicA1-Regular.eot?#iefix') format('embedded-opentype'),
@@ -240,7 +253,7 @@ strong {
     box-sizing: border-box;
 }
 
-.icons {
+.why_us_section .icons {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
@@ -445,4 +458,60 @@ textarea {
 
 button {
     border: none;
+}
+
+footer {
+    background-color: #4C6071;
+    background-image: url(../images/dots_background.svg);
+    background-size: cover;
+    padding: 30px 0px;
+}
+
+footer ul li {
+    font-size: 16px;
+    font-family:'Roboto-Light';
+    line-height: 150%;
+    color: white;
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.first_list li:first-of-type {
+    font-size: 24px;
+    font-family:'GothicA1_Regular';
+}
+
+footer .icons {
+    display: flex;
+}
+
+footer .icons li {
+    margin-bottom: initial;
+}
+
+footer .icons li a {
+    margin-right: 20px;
+}
+
+.map {
+    max-width: 540px;
+    height: 146px;
+    position: relative;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.map_shadow {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.7;
+    position: absolute;
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    text-align: center;
+    padding-top: 45px; 
+    box-sizing: border-box;
 }
