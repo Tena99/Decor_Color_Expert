@@ -626,6 +626,7 @@ footer .icons li a {
     width: 100%;
     border-radius: 20px;
     overflow: hidden;
+    z-index: 2;
 }
 
 .map_shadow {
@@ -634,10 +635,18 @@ footer .icons li a {
     background-color: black;
     opacity: 0.7;
     position: absolute;
-    color: white;
-    font-family: 'Montserrat';
-    font-size: 24px;
+
     text-align: center;
     padding-top: 45px; 
     box-sizing: border-box;
+    z-index: 1;
+}
+
+.map_shadow a {
+    display: inline-block;
+    max-width: 350px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 24px;
 }
