@@ -5,14 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Decor Color Expert</title>
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <div class="container">
     <header>
       <div class="container">
         <a href="#"
-          ><img class="logo" src="images/logo (2).svg" alt="logo"
+          ><img class="logo" src="images/logo.svg" alt="logo"
         /></a>
         <ul>
           <li><a href="">Главная</a></li>
@@ -27,6 +30,7 @@
         </ul>
       </div>
     </header>
+  </div>
     <div class="main_banner">
       <div class="container">
         <section class="decor_section">
@@ -162,6 +166,59 @@
       </div>
     </section>
 
+    <section class="cost_section">
+      <div class="cost_container">
+
+      <div class="cost_title">
+        <h3>
+          Рассчитайте ориентировочную стоимость выполнения Ваших работ ответив
+          всего на 5 вопросов
+        </h3>
+      </div>
+
+        <form action="#" method="post" name="cost_form">
+      
+        <div class="cost_background">
+
+          <div class="question_container">
+            <h4>Какая услуга Вас интересует?</h4>
+            <h5>Вопрос 1 из 5</h5>
+         </div>
+
+         <div class="cost_background2">
+        <div>
+          <div class="cost_subcontainer">
+            <label for="question1">Декоративная штукатурка</label>
+            <input type="radio" name="question1" />
+          </div>
+                
+          <div class="cost_subcontainer">
+            <label for="question1">Покраска</label>
+            <input type="radio" name="question1" />
+          </div>
+
+          <div class="cost_subcontainer">
+            <label for="question1">Декоративная штукатурка + покраска</label>
+            <input type="radio" name="question1" />
+          </div>               
+        </div> 
+
+        <div>
+
+          <div class="image_container">
+          <img src="images/question1.jpg" alt="question1_picture" />
+        </div>
+
+          <button type="button"  class="button" href="#">Назад</a>
+          <button type="button" class="button2" href="#">Далее</a>
+        </div>
+
+        </div>
+          </form>
+
+        </div>
+    </section>
+
     <section class="texture_section">
       <img class="dots" src="images/dots.svg" alt="dots" />
       <div class="container">
@@ -236,6 +293,7 @@
         <h3>Видеоотзывы</h3>
       </div>
       <div class="container">
+        <div class="owl-carousel">
         <article>
           <div class="video_feedback">
             <a class="arrow" href="#">
@@ -280,12 +338,13 @@
           <p>Мармушка обычно используется для вылова в северных морях</p>
         </article>
       </div>
+      </div>
     </section>
 
     <section class="form_section">
       <img class="dots" src="images/dots2.svg" alt="dots_picture" />
       <div class="container">
-        <form action="#" method="post" target="blank">
+        <form action="#" method="post" target="blank" name="discuss_project">
           <h3>Давайте обсудим ваш проект</h3>
           <div><input type="text" name="first_name" placeholder="Имя" /></div>
           <div>
@@ -360,5 +419,13 @@
         </div>
       </div>
     </footer>
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/scripts.js"></script>
+
   </body>
 </html>
