@@ -104,11 +104,6 @@
     background-size: cover;
 }
 
-
-header .container {
-    margin: 0;
-}
-
 .container {
     display: flex;
     justify-content: space-between;
