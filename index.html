@@ -5,17 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Decor Color Expert</title>
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.css" />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="https://resources/demos/style.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header>
       <div class="container">
-        <a href="#"
-          ><img class="logo" src="images/logo.svg" alt="logo"
-        /></a>
+        <a href="#"><img class="logo" src="images/logo.svg" alt="logo" /></a>
         <ul>
           <li><a href="">Главная</a></li>
           <li><a href="">Портфолио </a></li>
@@ -164,57 +167,96 @@
       </div>
     </section>
 
-    <section class="cost_section">
-      <div class="cost_container">
-
-      <div class="cost_title">
+    <section class="quest_banner">
+      <div class="quest_header">
         <h3>
-          Рассчитайте ориентировочную стоимость выполнения Ваших работ ответив
-          всего на 5 вопросов
+          Рассчитайте ориентировочную стоимость выполнения Ваших работ <br />
+          ответив всего на 5 вопросов
         </h3>
       </div>
 
-        <form action="#" method="post" name="cost_form">
-      
-        <div class="cost_background">
-
-          <div class="question_container">
-            <h4>Какая услуга Вас интересует?</h4>
-            <h5>Вопрос 1 из 5</h5>
-         </div>
-
-         <div class="cost_background2">
-        <div>
-          <div class="cost_subcontainer">
-            <label for="question1">Декоративная штукатурка</label>
-            <input type="radio" name="question1" />
-          </div>
-                
-          <div class="cost_subcontainer">
-            <label for="question1">Покраска</label>
-            <input type="radio" name="question1" />
-          </div>
-
-          <div class="cost_subcontainer">
-            <label for="question1">Декоративная штукатурка + покраска</label>
-            <input type="radio" name="question1" />
-          </div>               
-        </div> 
+      <div class="quest_main" id="accordion">
+        <h3>
+          <span>Какая услуга Вас интересует?</span>
+          <span>Вопрос 1 из 5</span>
+        </h3>
 
         <div>
+          <form method="post" action="#" name="quest">
+            <div class="quest_form">
+              <div class="select_method">
+                <label for="method1">
+                  <input type="radio" name="method" id="method1" />
+                  Декоративная штукатурка</label
+                >
+                <label for="method2">
+                  <input type="radio" name="method" id="method2" />
+                  Покраска</label
+                >
+                <label for="method3">
+                  <input
+                    type="radio"
+                    name="method"
+                    id="method3"
+                    class="last_method"
+                  />
+                  Декоративная штукатурка + покраска</label
+                >
+              </div>
+              <div class="quest_form_right">
+                <div class="quest_img">
+                  <img src="images/question1.jpg" alt="question1" />
+                </div>
 
-          <div class="image_container">
-          <img src="images/question1.jpg" alt="question1_picture" />
-        </div>
-
-          <button type="button"  class="button" href="#">Назад</a>
-          <button type="button" class="button2" href="#">Далее</a>
-        </div>
-
-        </div>
+                <div class="quest_buttons">
+                  <button type="submit" class="button_back">Назад</button>
+                  <button type="submit" class="button_forward">Далее</button>
+                </div>
+              </div>
+            </div>
           </form>
-
         </div>
+
+        <h3>
+          <span>Какая услуга Вас интересует?</span>
+          <span>Вопрос 1 из 5</span>
+        </h3>
+        <div>
+          <form method="post" action="#" name="quest">
+            <div class="quest_form">
+              <div class="select_method">
+                <label for="method4">
+                  <input type="radio" name="method" id="method4" />
+                  Декоративная штукатурка</label
+                >
+                <label for="method5">
+                  <input type="radio" name="method" id="method5" />
+                  Покраска</label
+                >
+                <label for="method6">
+                  <input
+                    type="radio"
+                    name="method"
+                    id="method6"
+                    class="last_method"
+                  />
+                  Декоративная штукатурка + покраска</label
+                >
+              </div>
+              <div class="quest_form_right">
+                <div class="quest_img">
+                  <img src="images/question1.jpg" alt="question1" />
+                </div>
+
+                <div class="quest_buttons">
+                  <button type="submit" class="button_back">Назад</button>
+                  <button type="submit" class="button_forward">Далее</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
     </section>
 
     <section class="texture_section">
@@ -292,95 +334,94 @@
       </div>
       <div class="container">
         <div class="owl-carousel">
-        <article>
-          <div class="video_feedback">
-            <a class="arrow" href="#">
-              <img src="images/arrow.svg" alt="arrow" />
-            </a>
-            <img src="images/video1.jpg" alt="video_feedback" />
-          </div>
-          <h4>Влажность и мебель</h4>
-          <p>Мармушка обычно используется для вылова в северных морях</p>
-        </article>
+          <article>
+            <div class="video_feedback">
+              <a class="arrow" href="#">
+                <img src="images/arrow.svg" alt="arrow" />
+              </a>
+              <img src="images/video1.jpg" alt="video_feedback" />
+            </div>
+            <h4>Влажность и мебель</h4>
+            <p>Мармушка обычно используется для вылова в северных морях</p>
+          </article>
 
-        <article>
-          <div class="video_feedback">
-            <a class="arrow" href="#">
-              <img src="images/arrow.svg" alt="arrow" />
-            </a>
-            <img src="images/video2.jpg" alt="video_feedback" />
-          </div>
-          <h4>Влажность и мебель</h4>
-          <p>Мармушка обычно используется для вылова в северных морях</p>
-        </article>
+          <article>
+            <div class="video_feedback">
+              <a class="arrow" href="#">
+                <img src="images/arrow.svg" alt="arrow" />
+              </a>
+              <img src="images/video2.jpg" alt="video_feedback" />
+            </div>
+            <h4>Влажность и мебель</h4>
+            <p>Мармушка обычно используется для вылова в северных морях</p>
+          </article>
 
-        <article>
-          <div class="video_feedback">
-            <a class="arrow" href="#">
-              <img src="images/arrow.svg" alt="arrow" />
-            </a>
-            <img src="images/video3.jpg" alt="video_feedback" />
-          </div>
-          <h4>Влажность и мебель</h4>
-          <p>Мармушка обычно используется для вылова в северных морях</p>
-        </article>
+          <article>
+            <div class="video_feedback">
+              <a class="arrow" href="#">
+                <img src="images/arrow.svg" alt="arrow" />
+              </a>
+              <img src="images/video3.jpg" alt="video_feedback" />
+            </div>
+            <h4>Влажность и мебель</h4>
+            <p>Мармушка обычно используется для вылова в северных морях</p>
+          </article>
 
-        <article>
-          <div class="video_feedback">
-            <a class="arrow" href="#">
-              <img src="images/arrow.svg" alt="arrow" />
-            </a>
-            <img src="images/video4.jpg" alt="video_feedback" />
-          </div>
-          <h4>Влажность и мебель</h4>
-          <p>Мармушка обычно используется для вылова в северных морях</p>
-        </article>
+          <article>
+            <div class="video_feedback">
+              <a class="arrow" href="#">
+                <img src="images/arrow.svg" alt="arrow" />
+              </a>
+              <img src="images/video4.jpg" alt="video_feedback" />
+            </div>
+            <h4>Влажность и мебель</h4>
+            <p>Мармушка обычно используется для вылова в северных морях</p>
+          </article>
 
-        <article>
-          <div class="video_feedback">
-            <a class="arrow" href="#">
-              <img src="images/arrow.svg" alt="arrow" />
-            </a>
-            <img src="images/video1.jpg" alt="video_feedback" />
-          </div>
-          <h4>Влажность и мебель</h4>
-          <p>Мармушка обычно используется для вылова в северных морях</p>
-        </article>
+          <article>
+            <div class="video_feedback">
+              <a class="arrow" href="#">
+                <img src="images/arrow.svg" alt="arrow" />
+              </a>
+              <img src="images/video1.jpg" alt="video_feedback" />
+            </div>
+            <h4>Влажность и мебель</h4>
+            <p>Мармушка обычно используется для вылова в северных морях</p>
+          </article>
 
-        <article>
-          <div class="video_feedback">
-            <a class="arrow" href="#">
-              <img src="images/arrow.svg" alt="arrow" />
-            </a>
-            <img src="images/video2.jpg" alt="video_feedback" />
-          </div>
-          <h4>Влажность и мебель</h4>
-          <p>Мармушка обычно используется для вылова в северных морях</p>
-        </article>
+          <article>
+            <div class="video_feedback">
+              <a class="arrow" href="#">
+                <img src="images/arrow.svg" alt="arrow" />
+              </a>
+              <img src="images/video2.jpg" alt="video_feedback" />
+            </div>
+            <h4>Влажность и мебель</h4>
+            <p>Мармушка обычно используется для вылова в северных морях</p>
+          </article>
 
-        <article>
-          <div class="video_feedback">
-            <a class="arrow" href="#">
-              <img src="images/arrow.svg" alt="arrow" />
-            </a>
-            <img src="images/video3.jpg" alt="video_feedback" />
-          </div>
-          <h4>Влажность и мебель</h4>
-          <p>Мармушка обычно используется для вылова в северных морях</p>
-        </article>
+          <article>
+            <div class="video_feedback">
+              <a class="arrow" href="#">
+                <img src="images/arrow.svg" alt="arrow" />
+              </a>
+              <img src="images/video3.jpg" alt="video_feedback" />
+            </div>
+            <h4>Влажность и мебель</h4>
+            <p>Мармушка обычно используется для вылова в северных морях</p>
+          </article>
 
-        <article>
-          <div class="video_feedback">
-            <a class="arrow" href="#">
-              <img src="images/arrow.svg" alt="arrow" />
-            </a>
-            <img src="images/video4.jpg" alt="video_feedback" />
-          </div>
-          <h4>Влажность и мебель</h4>
-          <p>Мармушка обычно используется для вылова в северных морях</p>
-        </article>
-
-      </div>
+          <article>
+            <div class="video_feedback">
+              <a class="arrow" href="#">
+                <img src="images/arrow.svg" alt="arrow" />
+              </a>
+              <img src="images/video4.jpg" alt="video_feedback" />
+            </div>
+            <h4>Влажность и мебель</h4>
+            <p>Мармушка обычно используется для вылова в северных морях</p>
+          </article>
+        </div>
       </div>
     </section>
 
@@ -447,7 +488,9 @@
 
         <div class="map">
           <div class="map_shadow">
-           <a target="_blank" href="https://goo.gl/maps/wrZDxjXLZKVGzhKG9">Нажмите чтобы посмотреть на карте</a>
+            <a target="_blank" href="https://goo.gl/maps/wrZDxjXLZKVGzhKG9"
+              >Нажмите чтобы посмотреть на карте</a
+            >
           </div>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d1634.604112918565!2d30.71030292115379!3d46.447399627819344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x40c6324b18719293%3A0x33e18db06d01fc20!2z0JzQsNC70LjQvdC-0LLRgdC60LjQuSDRgNCw0LnQvtC9LCDQntC00LXRgdGB0LAsINCe0LTQtdGB0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDY1MDAw!3m2!1d46.4477104!2d30.7110336!5e0!3m2!1sru!2sua!4v1655370454269!5m2!1sru!2sua"
@@ -462,14 +505,17 @@
       </div>
     </footer>
 
-
-    <script src="https://kit.fontawesome.com/1d44a8dca7.js" crossorigin="anonymous"></script>
     <script
-    src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-    crossorigin="anonymous"></script>
+      src="https://kit.fontawesome.com/1d44a8dca7.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
     <script src="js/owl.carousel.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
     <script src="js/scripts.js"></script>
-
   </body>
 </html>
