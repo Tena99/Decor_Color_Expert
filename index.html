@@ -167,96 +167,244 @@
       </div>
     </section>
 
-    <section class="quest_banner">
-      <div class="quest_header">
+    <section class="question_section">
+      <div class="question_header">
         <h3>
           Рассчитайте ориентировочную стоимость выполнения Ваших работ <br />
           ответив всего на 5 вопросов
         </h3>
       </div>
 
-      <div class="quest_main" id="accordion">
+      <div id="accordion">
         <h3>
           <span>Какая услуга Вас интересует?</span>
           <span>Вопрос 1 из 5</span>
         </h3>
+        <div class="question_main">
+          <div class="question_form">
+            <form action="#" method="post" name="question_1">
+              <div>
+                <div class="question1_select_method">
+                  <label for="method">Декоративная штукатурка</label>
+                  <input type="radio" name="method" />
+                </div>
 
-        <div>
-          <form method="post" action="#" name="quest">
-            <div class="quest_form">
-              <div class="select_method">
-                <label for="method1">
-                  <input type="radio" name="method" id="method1" />
-                  Декоративная штукатурка</label
-                >
-                <label for="method2">
-                  <input type="radio" name="method" id="method2" />
-                  Покраска</label
-                >
-                <label for="method3">
-                  <input
-                    type="radio"
-                    name="method"
-                    id="method3"
-                    class="last_method"
-                  />
-                  Декоративная штукатурка + покраска</label
-                >
+                <div class="question1_select_method">
+                  <label for="method">Покраска</label>
+                  <input type="radio" name="method" />
+                </div>
+
+                <div class="question1_select_method">
+                  <label for="method"
+                    >Декоративная штукатурка <br />
+                    + покраска</label
+                  >
+                  <input type="radio" name="method" />
+                </div>
               </div>
-              <div class="quest_form_right">
-                <div class="quest_img">
-                  <img src="images/question1.jpg" alt="question1" />
-                </div>
+            </form>
 
-                <div class="quest_buttons">
-                  <button type="submit" class="button_back">Назад</button>
-                  <button type="submit" class="button_forward">Далее</button>
-                </div>
+            <div>
+              <div class="image_container">
+                <img src="images/question1.jpg" alt="question1" />
+              </div>
+              <div class="container">
+                <button class="btn_prev" type="button">Назад</button>
+                <button class="btn_next" type="button">Далее</button>
               </div>
             </div>
-          </form>
+          </div>
         </div>
-
         <h3>
-          <span>Какая услуга Вас интересует?</span>
-          <span>Вопрос 1 из 5</span>
+          <span>Где будут выполняться работы?</span>
+          <span>Вопрос 2 из 5</span>
         </h3>
-        <div>
-          <form method="post" action="#" name="quest">
-            <div class="quest_form">
-              <div class="select_method">
-                <label for="method4">
-                  <input type="radio" name="method" id="method4" />
-                  Декоративная штукатурка</label
-                >
-                <label for="method5">
-                  <input type="radio" name="method" id="method5" />
-                  Покраска</label
-                >
-                <label for="method6">
-                  <input
-                    type="radio"
-                    name="method"
-                    id="method6"
-                    class="last_method"
-                  />
-                  Декоративная штукатурка + покраска</label
-                >
-              </div>
-              <div class="quest_form_right">
-                <div class="quest_img">
-                  <img src="images/question1.jpg" alt="question1" />
+        <div class="question_main">
+          <div class="question_form">
+            <form action="#" method="post" name="question_1">
+              <div>
+                <div class="question1_select_method">
+                  <label for="method">В помещении</label>
+                  <input type="radio" name="method" />
                 </div>
 
-                <div class="quest_buttons">
-                  <button type="submit" class="button_back">Назад</button>
-                  <button type="submit" class="button_forward">Далее</button>
+                <div class="question1_select_method">
+                  <label for="method">Фасад</label>
+                  <input type="radio" name="method" />
                 </div>
               </div>
+            </form>
+
+            <div>
+              <div class="image_container">
+                <img src="images/question2.jpg" alt="question2" />
+              </div>
+              <div class="container">
+                <button class="btn_prev2" type="button">Назад</button>
+                <button class="btn_next" type="button">Далее</button>
+              </div>
             </div>
-          </form>
+          </div>
         </div>
-      </div>
+        <h3>
+          <span>Какова площадь работы?</span>
+          <span>Вопрос 3 из 5</span>
+        </h3>
+        <div class="question_main">
+          <div class="question_form">
+            <form action="#" method="post" name="question_1">
+              <div>
+                <div class="question1_select_method">
+                  <label for="method">Менее 100 м2</label>
+                  <input type="radio" name="method" />
+                </div>
+
+                <div class="question1_select_method">
+                  <label for="method">Более 100 м2</label>
+                  <input type="radio" name="method" />
+                </div>
+
+                <div class="question1_select_method">
+                  <input
+                    type="text"
+                    id="area_input"
+                    placeholder="Точная площадь"
+                  />
+                  <input type="radio" name="method" />
+                </div>
+              </div>
+            </form>
+
+            <div>
+              <div class="image_container">
+                <img src="images/question3.jpg" alt="question3" />
+              </div>
+              <div class="container">
+                <button class="btn_prev2" type="button">Назад</button>
+                <button class="btn_next" type="button">Далее</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3>
+          <span>Уровень подготовки стен?</span>
+          <span>Вопрос 4 из 5</span>
+        </h3>
+        <div class="question_main">
+          <div class="question_form">
+            <form action="#" method="post" name="question_1">
+              <div>
+                <div class="question1_select_method">
+                  <label for="method">Оштукатуренные стены</label>
+                  <input type="radio" name="method" />
+                </div>
+
+                <div class="question1_select_method">
+                  <label for="method">Ошпаклеванные стены</label>
+                  <input type="radio" name="method" />
+                </div>
+
+                <div class="question1_select_method">
+                  <input type="text" id="area_input" placeholder="Другое" />
+                  <input type="radio" name="method" />
+                </div>
+              </div>
+            </form>
+
+            <div>
+              <div class="image_container">
+                <img src="images/question4.jpg" alt="question4" />
+              </div>
+              <div class="container">
+                <button class="btn_prev2" type="button">Назад</button>
+                <button class="btn_next" type="button">Далее</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3>
+          <span>Где находится объект?</span>
+          <span>Вопрос 5 из 5</span>
+        </h3>
+        <div class="question_main">
+          <div class="question_form">
+            <form action="#" method="post" name="question_1">
+              <div>
+                <div class="question1_select_method">
+                  <label for="method">Одесса</label>
+                  <input type="radio" name="method" />
+                </div>
+
+                <div class="question1_select_method">
+                  <label for="method">Пригород</label>
+                  <input type="radio" name="method" />
+                </div>
+              </div>
+            </form>
+
+            <div>
+              <div class="image_container">
+                <img src="images/question5.jpg" alt="question5" />
+              </div>
+              <div class="container">
+                <button class="btn_prev2" type="button">Назад</button>
+                <button class="btn_next" type="button">Далее</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3>
+          <span>Куда отправить результат?</span>
+        </h3>
+        <div class="question_main">
+          <div class="question_form">
+            <form action="#" method="post" name="question_1">
+              <div>
+                <div class="question1_select_method">
+                  <input type="text" id="area_input" placeholder="Имя" />
+                </div>
+
+                <div class="question1_select_method">
+                  <input
+                    type="tel"
+                    id="area_input"
+                    placeholder="Номер телефона"
+                  />
+                </div>
+
+                <div class="container">
+                  <div class="question1_select_method">
+                    <label class="telegram_icon_question" for="method"
+                      >Telegram</label
+                    >
+                    <input type="radio" name="method" />
+                  </div>
+
+                  <div class="question1_select_method">
+                    <label class="viber_icon_question" for="method"
+                      >Viber</label
+                    >
+                    <input type="radio" name="method" />
+                  </div>
+                </div>
+
+                <div class="question1_select_method">
+                  <input type="email" id="area_input" placeholder="E-mail" />
+                </div>
+              </div>
+            </form>
+
+            <div>
+              <div class="image_container">
+                <img src="images/results.jpg" alt="results" />
+              </div>
+              <div class="container">
+                <button class="btn_prev2" type="button">Назад</button>
+                <button class="btn_next" type="submit">Отправить</button>
+              </div>
+            </div>
+          </div>
+        </div>
     </section>
 
     <section class="texture_section">
@@ -505,10 +653,6 @@
       </div>
     </footer>
 
-    <script
-      src="https://kit.fontawesome.com/1d44a8dca7.js"
-      crossorigin="anonymous"
-    ></script>
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
